@@ -1,0 +1,71 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Création D’une Application De Gestion D’établissement Scolaire ",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Analyse",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true
+				}
+			]
+		},
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAGQpUQSGPxQzBs=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Conception"
+		},
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAGQpUSgEvxVhZA=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Métier"
+		},
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAGQpUTkw/xZxZY=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Physique"
+		},
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAGQpUUkP/xdQ0w=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Besoins",
+			"ownedElements": [
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "AAAAAAGQpUlmu/xltf0=",
+					"_parent": {
+						"$ref": "AAAAAAGQpUUkP/xdQ0w="
+					},
+					"name": "UseCaseDiagram1"
+				}
+			]
+		}
+	],
+	"author": "Rodrigue Nzomo Nzogang",
+	"copyright": "Cas Ensitech",
+	"version": "1"
+}
