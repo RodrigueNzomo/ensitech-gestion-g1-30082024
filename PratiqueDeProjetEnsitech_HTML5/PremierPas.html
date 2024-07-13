@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSITECH - Système de Gestion</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS for styling the pages */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .header-content img {
+            width: 104px;
+            height: 142px;
+        }
+
+        .header-text {
+            text-align: center;
+            flex: 1;
+        }
+
+        .header-text h1, .header-text h2, .header-text h3, .header-text h4, .header-text p {
+            margin: 0.5rem 0;
+        }
+
+        .additional-info {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem; /* Further reduce the bottom margin */
+        }
+
+        #login-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 300px); /* Adjust the height */
+            background-color: #007bff;
+            padding-top: 50px; /* Adjust the padding */
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 1.5rem; /* Reduce the padding */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            margin-top: 10px; /* Adjust the margin-top to 50px */
+        }
+
+        .login-container h2 {
+            margin-bottom: 1rem; /* Reduce the margin-bottom */
+            color: #007bff;
+        }
+
+        .form-group {
+            margin-bottom: 0.5rem; /* Reduce the margin-bottom */
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.25rem; /* Reduce the margin-bottom */
+            color: #333;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 0.5rem; /* Reduce the margin-top */
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .forgot-password {
+            display: block;
+            margin-top: 0.5rem; /* Reduce the margin-top */
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <img src="https://odoocdn.com/web/image/res.partner/6123358/avatar_1920/TMR%20COMPUTING%20LTD?unique=7f53a04" alt="TMR Computing Logo">
+            <div class="header-text">
+                <h1>Projet : Création D’une Application De Gestion D’établissement Scolaire</h1>
+                <h2>Cas : ENSITECH</h2>
+                <h3>Réalisée par Rodrigue Nzomo Nzogang Etudiant @10000Codeurs</h3>
+                <h4>Cursus Analyste Concepteur Developpeur Full stack Java</h4>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/W3Schools_logo.svg/1200px-W3Schools_logo.svg.png" alt="W3Schools Logo">
+        </div>
+        <div class="additional-info">
+            <p>DOCUMENT DE SPECIFICATION FONCTIONNELLES DETAILLEE</p>
+            <a href="https://www.ensitech.eu/" style="color: white;">This is a link to my client ENSITECH</a>
+            <p>Le système de gestion proposé pour ENSITECH sera déployé au sein d'une école d’enseignement supérieur spécialisée dans les métiers du Numérique. Cette institution vise à offrir des programmes éducatifs de haute qualité dans le domaine numérique, en préparant les étudiants à relever les défis technologiques actuels et futurs.</p>
+        </div>
+    </header>
+
+    <!-- Page de Connexion -->
+    <section id="login-page">
+        <div class="login-container">
+            <h2>Connexion</h2>
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="username">Identifiant</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Connexion</button>
+                <a href="/forgot-password" class="forgot-password">Mot de passe oublié ?</a>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
